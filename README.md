@@ -1,2 +1,2 @@
 # debian
-Debian modifications
+CUSTOM Debian modifications
