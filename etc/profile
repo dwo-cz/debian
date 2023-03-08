@@ -1,4 +1,4 @@
-# Mail notification abou succes SSH login to debian server
+# Mail notification about success SSH login to debian server
 
 if [ -n "$SSH_CLIENT" ]; then
 TEXT="$(date +'%d.%m.%Y'): ${USER} succesfull SSH login to $(hostname -f)"
