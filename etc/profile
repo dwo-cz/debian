@@ -3,7 +3,7 @@
 if [ -n "$SSH_CLIENT" ]; then
 TEXT="$(date +'%d.%m.%Y'): ${USER} succesfull SSH login to $(hostname -f)"
 TEXT="$TEXT from IP adress: $(echo $SSH_CLIENT|awk '{print $1}')"
-echo $TEXT|mail -s "SSH login $(hostname -f)" dwo@dwo.cz
+echo $TEXT|mail -s "SSH login $(hostname -f)" dwo@dwo.cz -a From:root@dwo.cz
 fi
 
 # MAIL body: 27.02.2023: client succesfull SSH login to <hostname> from IP adress: <ip>
